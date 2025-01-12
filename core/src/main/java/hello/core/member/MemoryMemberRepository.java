@@ -1,8 +1,11 @@
 package hello.core.member;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MemoryMemberRepository implements MemberRepository{
     // 메모리 내에서만 쓰기 때문에 테스트용으로 써야함.
     // conquerent hashmap을 실무에서는 써야 함. (동시성 이슈 발생 문제)
